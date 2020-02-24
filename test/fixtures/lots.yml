@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lot_column: MyString
+  column_row: 1
+  day: 2020-02-24
+  available: false
+
+two:
+  lot_column: MyString
+  column_row: 1
+  day: 2020-02-24
+  available: false
