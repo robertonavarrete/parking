@@ -18,6 +18,6 @@ For use the app:
 
 ![alt text](/modelo_logico_parking.png "Logo Modelo Lógico")
 
-![alt text](/home_design "El bosquejo de mi home")
+![alt text](/home_design.png "El bosquejo de mi home")
 
 
