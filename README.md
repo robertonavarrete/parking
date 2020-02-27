@@ -13,7 +13,7 @@ For use the app:\n
 
 [Proyecto en heroku](https://guarded-retreat-42723.herokuapp.com/)
 
-[El Tablero en Trello](https://github.com/robertonavarrete/parking)
+[El Tablero en Trello](https://trello.com/b/v6xqn1mP/parking-aeropuerto)
 
 
 ![alt text](/modelo_logico_parking.png "Logo Modelo Lógico")
