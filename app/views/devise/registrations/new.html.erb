@@ -12,10 +12,7 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-<%= f.radio_button_tag(:identification_type, 0) %>
-<%= label_tag(:identification_type, "Rut") %>
-<%= f.radio_button_tag(:identification_type, 1) %>
-<%= label_tag(:identification_type, "Pasaporte") %>
+<%= f.select :identification_type, [['Rut', false], ['Pasaporte', true]]%>
 </div>
 
 <div class="field">
