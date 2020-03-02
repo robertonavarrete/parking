@@ -1,3 +1,5 @@
 class Lot < ApplicationRecord
-    has_many: tickets
+    has_one: ticket
+
+    
 end

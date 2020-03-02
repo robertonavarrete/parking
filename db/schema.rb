@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_02_143812) do
+ActiveRecord::Schema.define(version: 2020_03_02_154403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,10 +33,17 @@ ActiveRecord::Schema.define(version: 2020_03_02_143812) do
   end
 
   create_table "lots", force: :cascade do |t|
-    t.string "lot_column"
-    t.integer "column_row"
     t.date "day"
     t.boolean "available", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "space_id"
+    t.index ["space_id"], name: "index_lots_on_space_id"
+  end
+
+  create_table "spaces", force: :cascade do |t|
+    t.string "column"
+    t.integer "row"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -70,6 +77,7 @@ ActiveRecord::Schema.define(version: 2020_03_02_143812) do
   end
 
   add_foreign_key "cars", "users"
+  add_foreign_key "lots", "spaces"
   add_foreign_key "tickets", "cars"
   add_foreign_key "tickets", "lots"
 end
