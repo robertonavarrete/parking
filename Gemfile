@@ -11,7 +11,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'rails-erd'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem 'image_processing', '~> 1.2'
 group :production do
 gem "aws-sdk-s3", require: false
